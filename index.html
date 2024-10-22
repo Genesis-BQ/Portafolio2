@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!---Menu del encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#Gene">Gene</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobremí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <h1>Génesis Barahona</h1>
+            <h2>Ingeniera Tecnología de la información</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/genesis.barahonaquiros?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/gene.1708quiros/profilecard/?igsh=ajIyaXA5dDRxajBv"><i class="fa-brands fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/génesis-barahona-quirós-6b6a082aa"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Sonbremi-->
+    <section class="sobremi" id="sobremi">
+        <div class="contenedor-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Génesis Barahona.</span> 
+                Soy una profesional comprometida y dedicada, reconocida por mi coherencia y 
+                respeto en el ámbito laboral. Mi pasión por el aprendizaje continuo, junto con mi enfoque perfeccionista, 
+                me impulsan a enfrentar desafíos con creatividad y empatía. Como ingeniera en tecnología informática, 
+                aspiro a integrarme en un equipo dinámico donde pueda contribuir con mis habilidades técnicas y mi experiencia en el 
+                desarrollo de soluciones web innovadoras.</p>
+
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            17-08-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+506) 8849-0797
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            gbarahonaq1708@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            CR,Cartago,Paraíso
+                        </li>
+                        <li>
+                            <strong>Estado Civil</strong>
+                            Soltera
+                        </li>
+                    </ul>
+                </div>
+
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                            <span>Naturaleza</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Gimnacio</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <span>Fotos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Familia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="downloadCV">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Seccion Skills-->
+    <section id="skills" class="skills">
+        <div class="contenedor-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Tecnico Skills-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skills">
+                            <div class="progreso javascript">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <span>HTML</span>
+                        <div class="barra-skills">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                        <span>CSS</span>
+                        <div class="barra-skills">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                        <span>Python</span>
+                        <div class="barra-skills">
+                            <div class="progreso python">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <span>Java</span>
+                        <div class="barra-skills">
+                            <div class="progreso java">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                        <span>C#</span>
+                        <div class="barra-skills">
+                            <div class="progreso javascript">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <span>SQL</span>
+                        <div class="barra-skills">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                        <span>MSQL</span>
+                        <div class="barra-skills">
+                            <div class="progreso javascript">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <span>Mongo DB</span>
+                        <div class="barra-skills">
+                            <div class="progreso java">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                        <span>.Net</span>
+                        <div class="barra-skills">
+                            <div class="progreso javascript">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <span>Git</span>
+                        <div class="barra-skills">
+                            <div class="progreso git">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                        <span>Github</span>
+                        <div class="barra-skills">
+                            <div class="progreso git">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                        <span>Data Oracle (Toad)</span>
+                        <div class="barra-skills">
+                            <div class="progreso java">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                        <span>Office Microsoft</span>
+                        <div class="barra-skills">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Profesional skillss-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skills">
+                            <div class="progreso comunicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skills">
+                            <div class="progreso equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <span>Creavtividad</span>
+                        <div class="barra-skills">
+                            <div class="progreso creatividad">
+                                <span>91%</span>
+                            </div>
+                        </div>
+                        <span>Dedicación</span>
+                        <div class="barra-skills">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <span>Resposabilidad</span>
+                        <div class="barra-skills">
+                            <div class="progreso comunicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                        <span>Formalidad</span>
+                        <div class="barra-skills">
+                            <div class="progreso comunicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                        <span>Auoexigencia</span>
+                        <div class="barra-skills">
+                            <div class="progreso equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skills">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachillaro educación media</h4>
+                        <span class="casa">Liceo de Paraíso</span>
+                        <span class="fecha">2014-2019</span>
+                        <p>Completé el bachillerato en el Liceo de Paraíso, 
+                            donde adquirí una sólida formación 
+                            académica que me proporcionó las herramientas necesarias para 
+                            desarrollar mis habilidades en diversas áreas del conocimiento. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnología de la información de la comunicaciones</h4>
+                        <span class="casa">Instituto Nacional de Aprendizaje</span>
+                        <span class="fecha">2020-2020</span>
+                        <p>En el Instituto Nacional de Aprendizaje, obtuve un curso de TICs, 
+                            donde adquirí conocimientos fundamentales en tecnología de la información y comunicación. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnología de la información</h4>
+                        <span class="casa">Colegio Universitario de Cartago</span>
+                        <span class="fecha">2021-2024</span>
+                        <p>Actualmente, estoy cursando un diplomado en Tecnología de la Información en el CUC, 
+                            donde estoy profundizando en temas avanzados como la gestión de bases de datos y desarrollo web. 
+                            Esta formación me está permitiendo fortalecer mis habilidades técnicas y prepararme para enfrentar los retos del ámbito tecnológico.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador</h4>
+                        <span class="casa">Jasec</span>
+                        <span class="fecha">2024-2024</span>
+                        <p>Como pasante, trabajé en equipo en el desarrollo de un servidor web en C# 
+                            para Jasec, contribuyendo a mejorar la escalabilidad 
+                            y el rendimiento del sistema mediante la implementación de soluciones
+                            eficientes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenedor-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/protectotulipan.png" alt="">
+                    <div class="overlay">
+                        <h3>Paginas web Tulipanes</h3>
+                        <p>Codigo</p>
+                        <a href="https://github.com/Genesis-BQ/TulipFlower"><i class="fa-brands fa-github-alt"></i></a>
+                        <p>Diseño</p>
+                        <a href="https://genesis-bq.github.io/TulipFlower/"><i class="fa-solid fa-web-awesome"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectoencriptador.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina que encripta y desencripta</h3>
+                        <p>Codigo</p>
+                        <a href="https://github.com/Genesis-BQ/Challenge-Encriptacion"><i class="fa-brands fa-github-alt"></i></a>
+                        <p>Diseño</p>
+                        <a href="https://genesis-bq.github.io/Challenge-Encriptacion/"><i class="fa-solid fa-web-awesome"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectopares.png" alt="">
+                    <div class="overlay">
+                        <h3>Juego de pares</h3>
+                        <p>Codigo</p>
+                        <a href="https://github.com/Genesis-BQ/Juego-de-pares"><i class="fa-brands fa-github-alt"></i></a>
+                        <p>Diseño</p>
+                        <a href="https://genesis-bq.github.io/Juego-de-pares/"><i class="fa-solid fa-web-awesome"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectofloresani.png" alt="">
+                    <div class="overlay">
+                        <h3>Flores animadas</h3>
+                        <p>Codigo</p>
+                        <a href="https://github.com/Genesis-BQ/animated-flower"><i class="fa-brands fa-github-alt"></i></a>
+                        <p>Diseño</p>
+                        <a href="https://genesis-bq.github.io/animated-flower/"><i class="fa-solid fa-web-awesome"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectoflor.png" alt="">
+                    <div class="overlay">
+                        <h3>Flor animada</h3>
+                        <p>Codigo</p>
+                        <a href="https://github.com/Genesis-BQ/Flower"><i class="fa-brands fa-github-alt"></i></a>
+                        <p>Diseño</p>
+                        <a href="https://genesis-bq.github.io/Flower/"><i class="fa-solid fa-web-awesome"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectosaturno.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina SaturnStore</h3>
+                        <p>Codigo</p>
+                        <a href="https://github.com/Genesis-BQ/Challenge-Alura-SaturnoStore"><i class="fa-brands fa-github-alt"></i></a>
+                        <p>Diseño</p>
+                        <a href="https://genesis-bq.github.io/Challenge-Alura-SaturnoStore/"><i class="fa-solid fa-web-awesome"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/genesis.barahonaquiros?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gene.1708quiros/profilecard/?igsh=ajIyaXA5dDRxajBv"><i class="fa-brands fa-instagram"></i></a>
+            <a href="www.linkedin.com/in/génesis-barahona-quirós-6b6a082aa"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
